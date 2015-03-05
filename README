@@ -24,14 +24,15 @@ Install dependent DUNE core modules and SuiteSparse from Debian Packages:
 
 Then build the OPM modules from source:
 
-  git clone https://github.com/OPM/opm-core.git -b release/2013.10
-  git clone https://github.com/OPM/opm-material.git -b release/2013.10
-  git clone https://github.com/OPM/opm-porsol.git -b release/2013.10
-  git clone https://github.com/OPM/opm-upscaling.git -b release/2013.10
-  git clone https://github.com/OPM/dune-cornerpoint.git -b release/2013.10
+  git clone https://github.com/OPM/opm-parser.git
+  git clone https://github.com/OPM/opm-core.git
+  git clone https://github.com/OPM/opm-material.git
+  git clone https://github.com/OPM/opm-porsol.git
+  git clone https://github.com/OPM/opm-upscaling.git
+  git clone https://github.com/OPM/dune-cornerpoint.git
   git clone https://github.com/OPM/opm-benchmarks.git
 
-  modules='opm-core opm-material dune-cornerpoint opm-porsol opm-upscaling opm-benchmarks'
+  modules='opm-parser opm-core opm-material dune-cornerpoint opm-porsol opm-upscaling opm-benchmarks'
 
   for module in ${modules}; do
       mkdir ${module}/build
